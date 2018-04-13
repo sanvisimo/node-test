@@ -20,11 +20,11 @@ app.use((req, res, next) => {
     next();
 });
 
-// app.use((req, res, next) => {
-//     res.render('maintenance.hbs', {
-//         welcomeMessage: 'Maintenance Page'
-//       });
-// });
+app.use((req, res, next) => {
+    res.render('maintenance.hbs', {
+        welcomeMessage: 'Maintenance Page'
+      });
+});
 
 app.use(express.static(__dirname + '/public'));
 
